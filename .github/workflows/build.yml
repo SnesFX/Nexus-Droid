@@ -64,9 +64,9 @@ jobs:
           Rename-Item ./dependencies/android/libvorbis-1.3.7 libvorbis
       - name: Download SDL2
         run: |
-          Invoke-WebRequest -Uri "https://libsdl.org/release/SDL2-devel-2.0.14-VC.zip" -OutFile "SDL2.zip"
+          Invoke-WebRequest -Uri "https://libsdl.org/release/SDL2-2.0.16.zip" -OutFile "SDL2.zip"
           Expand-Archive -Path SDL2.zip -DestinationPath ./dependencies/android/
-          Rename-Item ./dependencies/android/SDL2-2.0.14 SDL
+          Rename-Item ./dependencies/android/SDL2-2.0.16 SDL
       - name: Download GLEW
         run: |
           Invoke-WebRequest -Uri "https://github.com/nigels-com/glew/releases/download/glew-2.2.0/glew-2.2.0-win32.zip" -OutFile "GLEW.zip"

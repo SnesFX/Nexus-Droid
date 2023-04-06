@@ -74,8 +74,6 @@ jobs:
           Rename-Item ./dependencies/android/glew-2.2.0 glew
       - name: Move & Copy stuff
         run: |
-          Copy-Item -Path ./dependencies/android/app/jni/src/dependencies/android\* -Destination ./dependencies/
-          Copy-Item -Path ./dependencies/android/app/jni/src/dependencies/android/libogg/ -Destination ./dependencies/android/ -recurse
           Copy-Item -Path ./dependencies/android/config_types.h -Destination ./dependencies/android/libogg/include/ogg/
       - name: Set up Java
         uses: actions/setup-java@v2
